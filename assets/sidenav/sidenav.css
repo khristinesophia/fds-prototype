@@ -3,4 +3,7 @@
   color: #007bff !important;
   font-weight: 600 !important;
 }
-  
+.sn-active {
+  text-decoration: underline;
+  font-weight: 600;
+}
