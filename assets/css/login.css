@@ -1,0 +1,23 @@
+.divider-vertical {
+    border-right: 1px solid #8cb4f0;
+    height: 100%;
+}
+
+.custom-divider {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-top: 1px solid #686868;
+}
+
+.custom-input {
+    border-radius: 30px;
+    height: 60px;
+    padding: 10px 15px;
+    max-width: 500px; 
+    width: 100%; 
+}
+
+body{
+   background-color: #458af3;
+}
