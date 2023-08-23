@@ -1,0 +1,11 @@
+.room_active{
+    color: black !important;
+    font-weight: bold!important;
+}
+.nav_text{
+    color: grey;
+    padding: 1rem 1rem 1rem 0rem;
+}
+.nav_text:hover {
+    color: black;
+}
