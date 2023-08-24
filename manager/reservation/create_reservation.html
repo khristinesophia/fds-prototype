@@ -125,30 +125,33 @@
                         <div class="card-body">
                             <!-- Guest Details tab -->
                           <div class="tab d-none">
-                            <!-- last Name  -->
-                            <div class="mb-3">
-                              <label for="lastName" class="form-label fw-bold">Last Name</label>
-                              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Please enter guest's last name">
+                            <div class="row">
+                              <!-- last Name  -->
+                              <div class="mb-3 col-md-6">
+                                <label for="lastName" class="form-label fw-bold">Last Name</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter guest's last name">
+                              </div>
+                              <!-- first Name  -->
+                              <div class="mb-3 col-md-6">
+                                <label for="firstName" class="form-label fw-bold">First Name</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter guest's first name">
+                              </div>
                             </div>
-                            <!-- first Name  -->
-                            <div class="mb-3">
-                              <label for="firstName" class="form-label fw-bold">First Name</label>
-                              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Please enter guest's first name">
-                            </div>
+                            
                             <!-- home address  -->
                             <div class="mb-3">
                               <label for="homeAddress" class="form-label fw-bold">Home Address</label>
-                              <input type="text" class="form-control" name="homeAddress" id="homeAddress" placeholder="Please enter guest's home address">
+                              <input type="text" class="form-control" name="homeAddress" id="homeAddress" placeholder="Enter guest's home address">
                             </div>
                             <!-- email  -->
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-bold">Email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Please enter guest's email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter guest's email">
                               </div>
                              <!-- contact number  -->
                              <div class="mb-3">
                                 <label for="contactNumber" class="form-label fw-bold">Contact Number</label>
-                                <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Please enter guest's contact number">
+                                <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Enter guest's contact number">
                               </div>
                           </div>
                   
@@ -166,17 +169,23 @@
                                     <input type="date" class="form-control" name="checkOutDate" id="checkOutDate">
                                 </div>
                             </div>
+
+                            <!-- number of days  -->
+                            <div class="mb-3">
+                              <label for="numOfDays" class="form-label fw-bold">Number of Days</label>
+                              <input type="number" class="form-control" name="numOfDays" id="numOfDays" placeholder="Enter number of Days">
+                            </div>
                             
                             <div class="row">
                               <!-- number of adults  -->
                               <div class="mb-3 col-md-6">
                                 <label for="numOfAdults" class="form-label fw-bold">Number of Adults</label>
-                                <input type="number" class="form-control" name="numOfAdults" id="numOfAdults" placeholder="Please enter number of adults">
+                                <input type="number" class="form-control" name="numOfAdults" id="numOfAdults" placeholder="Enter number of adults">
                               </div>
                               <!-- number of children  -->
                               <div class="mb-3 col-md-6">
                                 <label for="numOfChildren" class="form-label fw-bold">Number of Children</label>
-                                <input type="number" class="form-control" name="numOfChildren" id="numOfChildren" placeholder="Please enter number of children">
+                                <input type="number" class="form-control" name="numOfChildren" id="numOfChildren" placeholder="Enter number of children">
                               </div>
                             </div>
                           </div>
@@ -231,12 +240,12 @@
                                     <input type="number" class="form-control" name="Balance" id="Balance" placeholder="Balance">
                                 </div>
                             </div>
-                        </div>
+                          </div>
                           
                   
                           <!-- Finish tab  -->
                           <div class="tab d-none">
-                            <p>All Set! Please submit to continue. Thank you</p>
+                            <p>All Set! Click submit to create reservation record.</p>
                           </div>
                         </div>
                         <div class="card-footer text-end">
@@ -247,7 +256,7 @@
                         </div>
                       </form>
                     </div>
-                  </section>
+                </section>
             </div>
         </div>
     </div>
