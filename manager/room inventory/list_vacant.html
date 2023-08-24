@@ -133,6 +133,11 @@
                                         <span class="ms-1 d-none d-sm-inline">Out-of-Order Rooms</span>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link align-middle nav_text">
+                                        <span class="ms-1 d-none d-sm-inline">Add a Room</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                 </div>  
@@ -155,7 +160,6 @@
                           <tr>
                             <th scope="col">Room Number</th>
                             <th scope="col">Room Type</th>
-                            <th scope="col">Room Name</th>
                             <th scope="col">Room Floor</th>
                             <th scope="col">Room Price</th>
                             <th scope="col">Room Capacity</th>
@@ -168,7 +172,6 @@
                           <tr data-bs-toggle="modal" data-bs-target="#det-modal">
                             <td>69</td>
                             <td>Deluxe</td>
-                            <td>Dulce Deluxe</td>
                             <td>3</td>
                             <td>2500</td>
                             <td>6</td>
@@ -179,7 +182,6 @@
                           <tr data-bs-toggle="modal" data-bs-target="#det-modal">
                             <td>69</td>
                             <td>Deluxe</td>
-                            <td>Dulce Deluxe</td>
                             <td>3</td>
                             <td>2500</td>
                             <td>6</td>
@@ -190,7 +192,6 @@
                           <tr data-bs-toggle="modal" data-bs-target="#det-modal">
                             <td>69</td>
                             <td>Deluxe</td>
-                            <td>Dulce Deluxe</td>
                             <td>3</td>
                             <td>2500</td>
                             <td>6</td>
@@ -201,7 +202,6 @@
                           <tr data-bs-toggle="modal" data-bs-target="#det-modal">
                             <td>69</td>
                             <td>Deluxe</td>
-                            <td>Dulce Deluxe</td>
                             <td>3</td>
                             <td>2500</td>
                             <td>6</td>
@@ -246,12 +246,6 @@
                                                     <input type="text" readonly class="form-control-plaintext" id="" value="Deluxe">
                                                 </div>
                                             </div> 
-                                             <div class="row">
-                                                <label for="" class="col-sm-5 col-form-label fw-bold">Room Name</label>
-                                                <div class="col-sm-5">
-                                                    <input type="text" readonly class="form-control-plaintext" id="" value="Dulce Deluxe">
-                                                </div>
-                                            </div> 
                                             <div class="row">
                                                 <label for="" class="col-sm-5 col-form-label fw-bold">Room Floor</label>
                                                 <div class="col-sm-5">
@@ -282,7 +276,9 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                <!-- <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button> -->
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
                             </div>
                         </div>
                     </div>
