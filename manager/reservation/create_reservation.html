@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Reservation | Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- col   -->
+            <!-- sidebar navigation  -->
+            <!-- close this during coding  -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
+                <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
+                    <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
+                        <i class="fa-solid fa-hand-holding-heart display-6 me-sm-2"></i>
+                        <h1 class="display-4 d-none d-sm-inline">Aruga</h1>
+                    </a>
+                    <ul class="nav nav-pills flex-column flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-house me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-door-open me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Rooms</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white active">
+                                <i class="fa-solid fa-calendar me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Reservations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-users-between-lines me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Guest Accounts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-chart-line me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Occupancy Demand</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"> -->
+                            <i class="fa-solid fa-user me-2"></i> <!-- placeholder only  -->
+                            <strong class="d-none d-sm-inline mx-1">User</strong> <!-- username here -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow">
+                            <!-- 
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> 
+                            -->
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col  -->
+            <!-- main content  -->
+            <div class="col px-0">
+                <!-- secondary navigation  -->
+                <!-- close this during coding  -->
+                <div class="container-fluid px-0">
+                    <nav class="navbar navbar-light bg-white shadow justify-content-between px-2 px-sm-5">
+              
+                      <!-- remove this div if there is no secondary navigation  -->
+                      <div>
+                        <a class="navbar-brand text-dark" href="#">
+                          Reservations
+                        </a>
+                        <a class="navbar-brand text-dark sn-active" href="#">
+                          Create Reservation
+                        </a>
+                      </div>
+              
+                      <!-- manager or receptionist  -->
+                      <a class="navbar-brand text-dark" href="#">
+                        <i class="fa-solid fa-user-tie me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Manager</span>
+                        <!--                    
+                        <i class="fa-solid fa-users me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Receptionist</span>
+                        -->
+                      </a>
+                    </nav>
+                </div>
+
+                <!-- start coding here  -->
+
+                <div class="container mt-5">
+                    <h2 class="display-6 fw-bold">Create Reservation</h2>
+                </div>
+
+                <section class="mt-4">
+                    <div class="container">
+                      <form class="card">
+                        <div class="card-header text-dark">
+                          <nav class="nav nav-pills nav-fill">
+                            <a class="nav-link tab-pills" href="#">Guest Details</a>
+                            <a class="nav-link tab-pills" href="#">Reservation Details</a>
+                            <a class="nav-link tab-pills" href="#">Room Selection</a>
+                            <a class="nav-link tab-pills" href="#">Payment and Balance</a>
+                            <a class="nav-link tab-pills" href="#">Finish</a>
+                          </nav>
+                        </div>
+                        <div class="card-body">
+                            <!-- Guest Details tab -->
+                          <div class="tab d-none">
+                            <!-- last Name  -->
+                            <div class="mb-3">
+                              <label for="lastName" class="form-label fw-bold">Last Name</label>
+                              <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Please enter guest's last name">
+                            </div>
+                            <!-- first Name  -->
+                            <div class="mb-3">
+                              <label for="firstName" class="form-label fw-bold">First Name</label>
+                              <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Please enter guest's first name">
+                            </div>
+                            <!-- home address  -->
+                            <div class="mb-3">
+                              <label for="homeAddress" class="form-label fw-bold">Home Address</label>
+                              <input type="text" class="form-control" name="homeAddress" id="homeAddress" placeholder="Please enter guest's home address">
+                            </div>
+                            <!-- email  -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Please enter guest's email">
+                              </div>
+                             <!-- contact number  -->
+                             <div class="mb-3">
+                                <label for="contactNumber" class="form-label fw-bold">Contact Number</label>
+                                <input type="text" class="form-control" name="contactNumber" id="contactNumber" placeholder="Please enter guest's contact number">
+                              </div>
+                          </div>
+                  
+                          <!-- Reservation Details tab  -->
+                          <div class="tab d-none">
+                            <div class="row">
+                            <!-- check in date  -->
+                                <div class="mb-3 col-md-6">
+                                    <label for="checkInDate" class="form-label fw-bold">Check-In Date</label>
+                                    <input type="date" class="form-control" name="checkInDate" id="checkInDate">
+                                </div>
+                                <!-- check out date  -->
+                                <div class="mb-3 col-md-6">
+                                    <label for="checkOutDate" class="form-label fw-bold">Check-Out Date</label>
+                                    <input type="date" class="form-control" name="checkOutDate" id="checkOutDate">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                              <!-- number of adults  -->
+                              <div class="mb-3 col-md-6">
+                                <label for="numOfAdults" class="form-label fw-bold">Number of Adults</label>
+                                <input type="number" class="form-control" name="numOfAdults" id="numOfAdults" placeholder="Please enter number of adults">
+                              </div>
+                              <!-- number of children  -->
+                              <div class="mb-3 col-md-6">
+                                <label for="numOfChildren" class="form-label fw-bold">Number of Children</label>
+                                <input type="number" class="form-control" name="numOfChildren" id="numOfChildren" placeholder="Please enter number of children">
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Room Selection tab  -->
+                          <div class="tab d-none">
+                            <!-- room type  -->
+                            <div class="mb-3">
+                              <label for="roomType" class="form-label fw-bold">Room Type</label>
+                              <select class="form-select">
+                                <option value="standard">Standard</option>
+                                <option value="deluxe">Deluxe</option>
+                                <option value="suite">Suite</option>
+                              </select>
+                            </div>
+                            <!-- room number  -->
+                            <div class="mb-3">
+                                <label for="roomNum" class="form-label fw-bold">Room Number</label>
+                                <input type="number" class="form-control" name="roomNum" id="roomNum" placeholder="Room Number">
+                            </div>
+                          </div>
+
+                          <!-- Payment and Balance tab  -->
+                          <div class="tab d-none">
+                            <!-- mode of payment  -->
+                            <div class="mb-3">
+                              <label for="roomType" class="form-label fw-bold">Mode of Payment</label>
+                              <select class="form-select">
+                                <option value="credit card">Credit Card</option>
+                                <option value="debit card">Debit Card</option>
+                                <option value="cash">Cash</option>
+                              </select>
+                            </div>
+                            <!-- starting balance  -->
+                            <div class="mb-3">
+                                <label for="startingBalance" class="form-label fw-bold">Starting Balance</label>
+                                <input type="number" class="form-control" name="startingBalance" id="startingBalance" placeholder="Starting Balance">
+                            </div>
+                            <div class="row">
+                                <!-- paid  -->
+                                <div class="mb-3 col-md-6">
+                                    <label for="roomType" class="form-label fw-bold">Paid</label>
+                                    <select class="form-select">
+                                    <option value="full">Full</option>
+                                    <option value="downpayment">Downpayment</option>
+                                    <option value="none">None</option>
+                                    </select>
+                                </div>
+                                <!-- balance  -->
+                                <div class="mb-3 col-md-6">
+                                    <label for="Balance" class="form-label fw-bold">Balance</label>
+                                    <input type="number" class="form-control" name="Balance" id="Balance" placeholder="Balance">
+                                </div>
+                            </div>
+                        </div>
+                          
+                  
+                          <!-- Finish tab  -->
+                          <div class="tab d-none">
+                            <p>All Set! Please submit to continue. Thank you</p>
+                          </div>
+                        </div>
+                        <div class="card-footer text-end">
+                          <div class="d-flex">
+                            <button type="button" id="back_button" class="btn btn-link" onclick="back()">Back</button>
+                            <button type="button" id="next_button" class="btn btn-primary ms-auto" onclick="next()">Next</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72e773f6c0.js" crossorigin="anonymous"></script>
+    <script src="../../assets/js/createreservationform.js"></script>
+</body>
+</html>
