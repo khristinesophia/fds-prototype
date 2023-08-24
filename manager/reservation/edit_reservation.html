@@ -185,7 +185,14 @@
                             <div class="row">
                                 <label for="" class="col-sm-2 col-form-label fw-bold">Check-Out Date</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="" value="2023/08/02">
+                                  <input type="text" class="form-control" id="" value="2023/08/04">
+                                </div>
+                            </div> 
+                            <!-- number of days  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Number of Days</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="2">
                                 </div>
                             </div> 
                             <!-- number of adults  -->
@@ -225,12 +232,19 @@
                                   <input type="text" class="form-control" id="" value="Deluxe">
                                 </div>
                             </div>
+                            <!-- room number -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Number</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="401">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- billing information  -->
+                    <!-- payment and balance  -->
                     <div class="card mt-5">
                         <div class="card-header fw-bold h5 bg-white">
-                            Reservation Details
+                            Payment and Balance
                         </div>
                         <div class="card-body">
                             <!-- 
@@ -248,25 +262,25 @@
                                   <input type="text" class="form-control" id="" value="Credit Card">
                                 </div>
                             </div> 
-                            <!-- expiration date  -->
+                            <!-- starting balance  -->
                             <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">Expiration Date</label>
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Starting Balance</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="" value="2028/04/02">
+                                  <input type="text" class="form-control" id="" value="3000">
                                 </div>
                             </div> 
-                            <!-- cvv / cvc  -->
+                            <!-- paid  -->
                             <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">CVV / CVC</label>
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Paid</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="" value="123">
+                                  <input type="text" class="form-control" id="" value="Downpayment">
                                 </div>
                             </div> 
-                            <!-- billing address  -->
+                            <!-- balance  -->
                             <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">Billing Address</label>
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Balance</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="" value="123 Main Street Citytown, ST 12345 United States">
+                                    <input type="text" class="form-control" id="" value="2100">
                                 </div>
                             </div> 
                         </div>
@@ -274,8 +288,8 @@
 
                     <!-- buttons  -->
                     <div class="d-grid gap-2 mt-5">
-                        <button class="btn btn-primary" type="button">Submit</button>
-                        <button class="btn btn-secondary" type="button">Cancel</button>
+                        <a class="btn btn-primary" type="button">Submit</a>
+                        <a class="btn btn-secondary" type="button">Cancel</a>
                     </div>
                 </div>
             </div>
