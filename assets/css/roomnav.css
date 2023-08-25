@@ -9,3 +9,9 @@
 .nav_text:hover {
     color: black;
 }
+
+.line {
+    border-right: 1px solid rgb(197, 197, 197);
+    padding-right: 10px;
+    padding-left: 10px
+}
