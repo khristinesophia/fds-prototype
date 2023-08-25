@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room (Manager) | Vacant Room List</title>
+    <title>Room (Manager) | All Room List</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
     <link rel="stylesheet" href="../../assets/css/roomnav.css">
@@ -109,21 +109,20 @@
                 <div class="container mt-5">
                     <h2 class="display-6 fw-bold">Room</h2>
                 </div>
-                
                 <!-- Room Navigation -->
                 <div class="container mt-3">
                     <div class="d-flex justify-content-between align-items-stretch pt-2 text-white">
                         <ul class="nav nav-pills justify-content-between flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch " id="menu">
                             <!-- all rooms-->
                             <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text ">
+                                <a href="#" class="nav-link align-middle nav_text room_active">
                                     <i class="fa-solid fa-bed me-sm-1 ms-2"></i>
                                     <span class="d-none d-sm-inline">All Rooms</span>                        
                                 </a>
                             </li>
                             <!-- vacant rooms-->
                             <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text room_active">
+                                <a href="#" class="nav-link align-middle nav_text">
                                     <i class="fa-solid fa-tags me-sm-1 ms-2"></i>
                                     <span class="d-none d-sm-inline">Vacant Rooms</span>
                                 </a>
@@ -159,6 +158,7 @@
                         </ul>
                     </div>
                 </div>
+                
 
                 <!-- Table -->
                 <div class="container shadow mt-3">
@@ -179,6 +179,7 @@
                             <th scope="col">Room Number</th>
                             <th scope="col">Room Type</th>
                             <th scope="col">Room Floor</th>
+                            <th scope="col">Room Status</th>
                             <th scope="col"></th>
                             <th scope="col"></th>
                           </tr>
@@ -188,6 +189,7 @@
                             <td>401</td>
                             <td>Deluxe</td>
                             <td>4</td>
+                            <td>Vacant</td>
                             <td>Edit</td>
                             <td>Delete</td>
                           </tr>
@@ -195,6 +197,7 @@
                             <td>401</td>
                             <td>Deluxe</td>
                             <td>4</td>
+                            <td>Vacant</td>
                             <td>Edit</td>
                             <td>Delete</td>
                           </tr>
@@ -202,6 +205,7 @@
                             <td>401</td>
                             <td>Deluxe</td>
                             <td>4</td>
+                            <td>Vacant</td>
                             <td>Edit</td>
                             <td>Delete</td>
                           </tr>
@@ -209,6 +213,7 @@
                             <td>401</td>
                             <td>Deluxe</td>
                             <td>4</td>
+                            <td>Vacant</td>
                             <td>Edit</td>
                             <td>Delete</td>
                           </tr>
