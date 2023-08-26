@@ -84,10 +84,10 @@
                       <!-- remove this div if there is no secondary navigation  -->
                       <div>
                         <a class="navbar-brand text-dark" href="#">
-                          Link
+                        Dashboard
                         </a>
                         <a class="navbar-brand text-dark" href="#">
-                          Link
+                        
                         </a>
                       </div>
               
@@ -108,32 +108,114 @@
                 <div class="container mt-4">
                     
                     <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="mb-3">Rooms</h2>  
+                        <div class="col-md-9">
+                            <!-- Rooms -->
+                            <h1 class="mb-3 mt-5">Rooms</h1>  
                             <div class="d-flex">
-                                <div class="card col-md-3 mx-2">
+
+                                <!-- All Rooms-->
+                                <div class="card col-md-3 mx-2 shadow ">
                                     <div class="card-body">
-                                        Card 1 - All Rooms
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            All
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-bed" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card col-md-3 mx-2">
+                                
+                                <!-- Vacant rooms -->
+                                <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 2 - Vacant
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Vacant
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-tags" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card col-md-3 mx-2">
+                                
+
+                                <div class="card col-md-3 mx-2 shadow">
+                                    <!-- All rooms -->
                                     <div class="card-body">
-                                        Card 3 - Occupied
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Occupied
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-house-lock" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card col-md-3 mx-2">
+                                
+                                <!-- On-Change rooms -->
+                                <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 4 - On-Change
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            On-Change
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-broom" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h4 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h4>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card col-md-3 mx-2">
+
+                                <!-- Out-of-Order rooms -->
+                                <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 5 - Out-of-Order
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Out-of-Order
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-circle-minus" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -142,17 +224,50 @@
                     
                     
                     <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="mb-3">Reservations</h2>  
+                        <div class="col-md-9">
+                            <!-- Reservations-->
+                            <h1 class="mb-3 mt-5">Reservations</h1>  
                             <div class="d-flex ">
-                                <div class="card col-md-3 mx-2">
+
+                                <!-- Guaranteed rooms -->
+                                <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 1 - Guaranteed
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Guaranteed
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-house-lock" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card col-md-3 mx-2">
+
+                                 <!-- Non-Guaranteed rooms -->
+                                 <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 2 - Non-Guaranteed
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Non-Guaranteed
+                                        </h5>
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-house-lock" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -161,13 +276,29 @@
 
                     <div class="row">
                         <div class="col-md-8">
-                            <h2 class="mb-3">Guest Accounts</h2>  
+                            <h1 class="mb-3 mt-5">Guest Accounts</h1>  
                             <div class="d-flex ">
-                                <div class="card col-md-3 mx-2">
+                                <!-- Non-Guaranteed rooms -->
+                                <div class="card col-md-3 mx-2 shadow">
                                     <div class="card-body">
-                                        Card 1 - Guest Accounts
+                                        <!-- Upper Part (Horizontal Division) -->
+                                        <h5 class="title">
+                                            Guest Accounts
+                                        </h5>
+                                        
+                                        <!-- Lower Part (Horizontal Division) -->
+                                        <div class="lower-part row">
+                                            <!-- Left Side (Vertical Division) - icon -->
+                                            <div class="left-side col-md-6 text-center mb-3 mb-md-0">
+                                                <i class="fa-solid fa-house-lock" style="font-size: 50px;"></i>
+                                            </div>
+                                            <!-- Right Side (Vertical Division) - Number -->
+                                            <h3 class="right-side col-md-6 text-center">
+                                                <input type="text" readonly class="form-control-plaintext fw-bold" value="500">
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>                                                               
+                                </div>                                                             
                             </div>
                         </div>
                     </div>
