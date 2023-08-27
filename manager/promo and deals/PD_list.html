@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promos and Deals | Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- col   -->
+            <!-- sidebar navigation  -->
+            <!-- close this during coding  -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
+                <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
+                    <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
+                        <i class="fa-solid fa-hand-holding-heart display-6 me-sm-2"></i>
+                        <h1 class="display-4 d-none d-sm-inline">Aruga</h1>
+                    </a>
+                    <ul class="nav nav-pills flex-column flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-house me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-door-open me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Rooms</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-calendar me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Reservations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-users-between-lines me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Guest Accounts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-chart-line me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Occupancy Demand</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white active">
+                                <i class="fa-solid fa-tag me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Promos and Deals</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"> -->
+                            <i class="fa-solid fa-user me-2"></i> <!-- placeholder only  -->
+                            <strong class="d-none d-sm-inline mx-1">User</strong> <!-- username here -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow">
+                            <!-- 
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> 
+                            -->
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col  -->
+            <!-- main content  -->
+            <div class="col px-0">
+                <!-- secondary navigation  -->
+                <!-- close this during coding  -->
+                <div class="container-fluid px-0">
+                    <nav class="navbar navbar-light bg-white shadow justify-content-between px-2 px-sm-5">
+              
+                      <!-- remove this div if there is no secondary navigation  -->
+                      <div>
+                        <a class="navbar-brand text-dark sn-active" href="#">
+                          Promos and Deals
+                        </a>
+                        <a class="navbar-brand text-dark" href="#">
+                          Add a Promo or Deal
+                        </a>
+                      </div>
+              
+                      <!-- manager or receptionist  -->
+                      <a class="navbar-brand text-dark" href="#">
+                        <i class="fa-solid fa-user-tie me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Manager</span>
+                        <!--                    
+                        <i class="fa-solid fa-users me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Receptionist</span>
+                        -->
+                      </a>
+                    </nav>
+                </div>
+
+                <!-- start coding here  -->
+                <div class="container mt-5">
+                    <h2 class="display-6 fw-bold">Promos and Deals</h2>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo1-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Summer Getaway Special</h5>
+                                  <p class="card-text">Escape to our luxurious hotel this summer and enjoy 20% off your stay! Immerse yourself in comfort, relax by the pool, and indulge in our exquisite dining options. Use promo code SummerGetaway20 to unlock this fantastic deal.</p>
+                                  <a href="#" class="btn btn-primary">SummerGetaway20</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo2-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Suite Dreams Package</h5>
+                                  <p class="card-text">Elevate your stay with our Suite Dreams Package! Book a suite for two nights and receive a complimentary third night. Experience opulent accommodations, stunning views, and personalized service. Treat yourself to a memorable escape with promo code SuiteDreams.</p>
+                                  <a href="#" class="btn btn-primary">SuiteDreams</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo3-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Family Fun Retreat</h5>
+                                  <p class="card-text">Plan a family vacation and save big with our Family Fun Retreat! Kids stay and eat for free when you book a minimum three-night stay. Enjoy family-friendly amenities, exciting activities, and create lasting memories. Use promo code FamilyFun50 when booking.</p>
+                                  <a href="#" class="btn btn-primary">FamilyFun50</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo4-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Ultimate Spa Relaxation</h5>
+                                  <p class="card-text">Pamper yourself with our Ultimate Spa Relaxation package. Unwind with a rejuvenating spa treatment and receive 25% off your stay. Indulge in tranquility, wellness, and top-notch hospitality. Book now using promo code SpaRelaxation25.</p>
+                                  <a href="#" class="btn btn-primary">SpaRelaxation25</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo5-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Extended Stay Discount</h5>
+                                  <p class="card-text">Stay longer and save more with our Extended Stay Discount. Book a stay of seven nights or more and enjoy 15% off your entire reservation. Experience the comforts of home away from home and explore the local attractions at your leisure. Use promo code ExtendedStay15 to avail this offer.</p>
+                                  <a href="#" class="btn btn-primary">ExtendedStay15</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow" style="width:18rem;height:100%;">
+                                <img src="../../assets/imgs/promo6-image.jpg" class="card-img-top" alt="..." height="200">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">Honeymoon Bliss Package</h5>
+                                  <p class="card-text">Celebrate your love story with our Honeymoon Bliss Package. Experience romantic moments in a beautifully decorated suite, enjoy champagne and chocolates, and indulge in a couples' spa session. Book now and make your honeymoon truly unforgettable. Use promo code HoneymoonBliss when reserving your stay.</p>
+                                  <a href="#" class="btn btn-primary">HoneymoonBliss</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72e773f6c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
