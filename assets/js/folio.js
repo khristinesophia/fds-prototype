@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip();
-	var actions = $("table td:last-child").html();
+	var actions = $("table.tablefolio td:last-child").html();
 	// Append table with add row form on add new button click
     $(".add-new").click(function(){
 		$(this).attr("disabled", "disabled");
-		var index = $("table tbody tr:last-child").index();
+		var index = $("table.tablefolio tbody.tbodyfolio tr:last-child").index();
         var row = '<tr>' +
             '<td><input type="text" class="form-control" name="" id=""></td>' +
             '<td><input type="text" class="form-control" name="" id=""></td>' +
@@ -12,8 +12,8 @@ $(document).ready(function(){
             '<td><input type="text" class="form-control" name="" id=""></td>' +
 			'<td>' + actions + '</td>' +
         '</tr>';
-    	$("table").append(row);		
-		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+    	$("table.tablefolio tbody.tbodyfolio").append(row);		
+		$("table.tablefolio tbody.tbodyfolio tr").eq(index + 1).find(".add, .edit").toggle();
         $('[data-toggle="tooltip"]').tooltip();
     });
 	// Add row on add button click
