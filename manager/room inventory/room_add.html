@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room (Manager) | Add a Room</title>
+    <title>Add a Room | Manager</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
     <link rel="stylesheet" href="/assets/css/roomnav.css">
@@ -180,9 +180,13 @@
                             </div>
                             <!-- Room Type -->
                             <div class="mb-3">
-                              <label for="roomtype" class="form-label fw-bold">Room Type</label>
-                              <input type="text" class="form-control" name="roomtype" id="roomtype" placeholder="Please enter room type">
-                            </div>
+                                <label for="roomType" class="form-label fw-bold row-2">Room Type</label>
+                                <select class="form-select row-10">
+                                  <option value="standard">Standard</option>
+                                  <option value="deluxe">Deluxe</option>
+                                  <option value="suite">Suite</option>
+                                </select>
+                              </div>
                             <!-- Room Floor  -->
                             <div class="mb-3">
                               <label for="roomfloor" class="form-label fw-bold">Room Floor</label>
@@ -190,12 +194,12 @@
                             </div>
                             <!-- Room Capacity  -->
                             <div class="mb-3">
-                                <label for="roomcapacity" class="form-label fw-bold">Room Capacity</label>
+                                <label for="roomcapacity" class="form-label fw-bold">Capacity</label>
                                 <input type="email" class="form-control" name="roomcapacity" id="roomcapacity" placeholder="Please enter room capacity">
                             </div>
                             <!-- Room Price -->
                             <div class="mb-3">
-                                <label for="roomprice" class="form-label fw-bold">Room Price</label>
+                                <label for="roomprice" class="form-label fw-bold">Price</label>
                                 <input type="email" class="form-control" name="roomprice" id="roomprice" placeholder="Please enter room price">
                             </div>
                             
