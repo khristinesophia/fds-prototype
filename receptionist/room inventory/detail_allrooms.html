@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
-    <title>Room (Manager) | Occupied Room Detail</title>
+    <title>Room (Receptionist) | All Room Detail</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -83,18 +83,13 @@
               
                       <!-- remove this div if there is no secondary navigation  -->
                       <div>
-                        <a class="navbar-brand text-dark sn-active" href="#">
-                            Room
-                        </a>
-                        <a class="navbar-brand text-dark" href="#">
-                            Create Room
-                        </a>
+                        <a class="navbar-brand text-dark sn-active" href="#">Room</a>
                       </div>
               
                       <!-- manager or receptionist  -->
                       <a class="navbar-brand text-dark" href="#">
                         <i class="fa-solid fa-user-tie me-sm-2"></i>
-                        <span class="ms-1 d-none d-sm-inline">Manager</span>
+                        <span class="ms-1 d-none d-sm-inline">Receptionist</span>
                         <!--                    
                         <i class="fa-solid fa-users me-sm-2"></i>
                         <span class="ms-1 d-none d-sm-inline">Receptionist</span>
@@ -112,7 +107,7 @@
                     <!-- guest details card  -->
                     <div class="card mt-5">
                         <div class="card-header fw-bold h5">
-                          Occupied Room Details
+                          Room Details
                         </div>
                         <div class="card-body">
                             <!-- 
@@ -136,7 +131,7 @@
                                 <div class="col-sm-10">
                                   <input type="text" readonly class="form-control-plaintext" id="" value="Deluxe">
                                 </div>
-                            </div> 
+                            </div>                  
                             <!-- room floor  -->
                             <div class="row">
                                 <label for="" class="col-sm-2 col-form-label fw-bold">Room Floor</label>
@@ -144,32 +139,32 @@
                                   <input type="text" readonly class="form-control-plaintext" id="" value="4">
                                 </div>
                             </div> 
-                            <!-- guest name  -->
+                            <!-- room capacity -->
                             <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">Guest Name</label>
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Capacity</label>
                                 <div class="col-sm-10">
-                                  <input type="text" readonly class="form-control-plaintext" id="" value="John Doe">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="6">
                                 </div>
                             </div> 
-                            <!-- check-in date  -->
-                            <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">Check-In Date</label>
+                             <!-- room status  -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Status</label>
                                 <div class="col-sm-10">
-                                  <input type="text" readonly class="form-control-plaintext" id="" value="2023/08/02">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="Vacant">
                                 </div>
                             </div> 
-                            <!-- check-out date -->
-                            <div class="row">
-                                <label for="" class="col-sm-2 col-form-label fw-bold">Check-Out Date</label>
+                             <!-- room price -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Price</label>
                                 <div class="col-sm-10">
-                                  <input type="text" readonly class="form-control-plaintext" id="" value="2023/08/04">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="2500">
                                 </div>
                             </div> 
                         </div>
                         <div class="card-footer text-end">
-                            <div class="d-flex justify-content-end">
-                                <!-- <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button> -->
-                                <button class="btn btn-primary">Close</button>
+                            <div class="d-flex justify-content-end ">
+                            <!-- <button class="btn btn-primary">Close</button> -->
+                            <button class="btn btn-primary">Close</button>
                             </div>
                         </div>
                     </div>                
