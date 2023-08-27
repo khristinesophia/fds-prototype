@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Rooms | Manager</title>
+    <title>Occupancy Demand | Table View</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
     <link rel="stylesheet" href="../../assets/css/modulenav.css">
@@ -14,7 +14,6 @@
             <!-- col   -->
             <!-- sidebar navigation  -->
             <!-- close this during coding  -->
-            
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
                 <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
                     <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
@@ -29,7 +28,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle text-white active">
+                            <a href="#" class="nav-link align-middle text-white">
                                 <i class="fa-solid fa-door-open me-sm-2"></i>
                                 <span class="ms-1 d-none d-sm-inline">Rooms</span>
                             </a>
@@ -47,7 +46,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle text-white">
+                            <a href="#" class="nav-link align-middle text-white active">
                                 <i class="fa-solid fa-chart-line me-sm-2"></i>
                                 <span class="ms-1 d-none d-sm-inline">Occupancy Demand</span>
                             </a>
@@ -82,17 +81,13 @@
                 <!-- close this during coding  -->
                 <div class="container-fluid px-0">
                     <nav class="navbar navbar-light bg-white shadow justify-content-between px-2 px-sm-5">
-              
-                      <!-- remove this div if there is no secondary navigation  -->
+                         <!-- remove this div if there is no secondary navigation  -->
                       <div>
                         <a class="navbar-brand text-dark sn-active" href="#">
-                            Room
-                        </a>
-                        <a class="navbar-brand text-dark" href="#">
-                            Create Room
+                            Occupancy Demand
                         </a>
                       </div>
-              
+
                       <!-- manager or receptionist  -->
                       <a class="navbar-brand text-dark" href="#">
                         <i class="fa-solid fa-user-tie me-sm-2"></i>
@@ -107,115 +102,89 @@
 
                 <!-- start coding here  -->
                 <div class="container mt-5">
-                    <h2 class="display-6 fw-bold">Room</h2>
+                    <h2 class="display-6 fw-bold">Occupancy Demand</h2>
                 </div>
-                <!-- Room Navigation -->
+
+                <!-- occupancy demand nav  -->
                 <div class="container mt-3">
                     <div class="d-flex justify-content-between align-items-stretch pt-2 text-white">
                         <ul class="nav nav-pills justify-content-between flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch " id="menu">
-                            <!-- all rooms-->
+                            <!-- graph view  -->
+                            <li class="nav-item line">
+                                <a href="#" class="nav-link align-middle nav_text">
+                                    <i class="fa-solid fa-chart-line me-sm-1 ms-2"></i>
+                                    <span class="">Graph View</span>                        
+                                </a>
+                            </li>
+                            <!-- table view  -->
                             <li class="nav-item line">
                                 <a href="#" class="nav-link align-middle nav_text room_active">
-                                    <i class="fa-solid fa-bed me-sm-1 ms-2"></i>
-                                    <span class="">All Rooms</span>                        
-                                </a>
-                            </li>
-                            <!-- vacant rooms-->
-                            <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text">
-                                    <i class="fa-solid fa-tags me-sm-1 ms-2"></i>
-                                    <span class="">Vacant Rooms</span>
-                                </a>
-                            </li>
-                            <!-- occupied rooms-->
-                            <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text ">
-                                    <i class="fa-solid fa-house-lock me-sm-1 ms-2"></i>
-                                    <span class="">Occupied Rooms</span>
-                                </a>
-                            </li>
-                            <!-- on-change rooms-->
-                            <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text">
-                                    <i class="fa-solid fa-broom me-sm-1 ms-2"></i>
-                                    <span class="">On-Change Rooms</span>
-                                </a>
-                            </li>
-                            <!-- out-of-order rooms-->
-                            <li class="nav-item line">
-                                <a href="#" class="nav-link align-middle nav_text">
-                                    <i class="fa-solid fa-circle-minus me-sm-1 ms-2 "></i>
-                                    <span class="">Out-of-Order Rooms</span>
-                                </a>
-                            </li>
-                            <!-- add a rooms-->
-                            <li class="nav-item ps-2">
-                                <a href="#" class="nav-link align-middle nav_text ">
-                                    <i class="fa-solid fa-house-medical me-sm-1 ms-2"></i>
-                                    <span class="">Add a Room</span>
+                                    <i class="fa-solid fa-table me-sm-1 ms-2"></i>                                    
+                                    <span class="">Table View</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
 
-                <!-- Table -->
+                <!-- table  -->
                 <div class="container shadow mt-3">
-                    <!-- Search bar  -->
-                    <div class="d-flex flex-column flex-sm-row align-items-stretch align-items-sm-center">
-                        <form class="flex-fill me-2">
-                            <div class="mt-sm-3 mb-3">
-                              <label for="searchReservation" class="form-label fw-bold">Search</label>
-                              <input type="text" class="form-control" id="searchReservation">
-                            </div>
-                        </form>                       
+                    <!-- filters  -->
+                    <div class="d-flex flex-column align-items-stretch flex-sm-row align-items-sm-center justify-content-sm-end">
+                        <div class="form-group me-2">
+                            <label for="date" class="form-label fw-bold">Date</label>
+                            <input type="date" class="form-control" id="date">
+                        </div>
+
+                        <div class="form-group me-2">
+                            <label for="demand" class="form-label fw-bold">Demand</label>
+                            <select class="form-select" id="demand">
+                                <option value="high">High</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <!-- Table body  -->
+                    <!-- table  -->
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">Room Number</th>
-                            <th scope="col">Room Type</th>
-                            <th scope="col">Room Floor</th>
-                            <th scope="col">Room Status</th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
+                            <th scope="col">Forecast ID</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Predicted Occupancy</th>
+                            <th scope="col">Demand</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr data-bs-toggle="modal" data-bs-target="#det-modal">
-                            <td>401</td>
-                            <td>Deluxe</td>
-                            <td>4</td>
-                            <td>Vacant</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                          <tr>
+                            <td>01</td>
+                            <td>September 10</td>
+                            <td>2.25</td>
+                            <td>Low</td>
                           </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#det-modal">
-                            <td>401</td>
-                            <td>Deluxe</td>
-                            <td>4</td>
-                            <td>Occupied</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                          <tr>
+                            <td>02</td>
+                            <td>Septeber 18</td>
+                            <td>2.25</td>
+                            <td>Low</td>
                           </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#det-modal">
-                            <td>401</td>
-                            <td>Deluxe</td>
-                            <td>4</td>
-                            <td>Vacant</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                          <tr>
+                            <td>03</td>
+                            <td>October 02</td>
+                            <td>2.25</td>
+                            <td>Low</td>
                           </tr>
-                          <tr data-bs-toggle="modal" data-bs-target="#det-modal">
-                            <td>401</td>
-                            <td>Deluxe</td>
-                            <td>4</td>
-                            <td>Occupied</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                          <tr>
+                            <td>03</td>
+                            <td>November 12</td>
+                            <td>2.25</td>
+                            <td>Low</td>
+                          </tr>
+                          <tr>
+                            <td>03</td>
+                            <td>November 25</td>
+                            <td>2.25</td>
+                            <td>Low</td>
                           </tr>
                         </tbody>
                     </table>
