@@ -1,4 +1,3 @@
-# fds
-# github repository of capstone g9
+# fds // github repository of capstone g9
 # amigable, cantilado, intal, serrano
 # eyy
