@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Room | Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- col   -->
+            <!-- sidebar navigation  -->
+            <!-- close this during coding  -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
+                <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
+                    <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
+                        <i class="fa-solid fa-hand-holding-heart display-6 me-sm-2"></i>
+                        <h1 class="display-4 d-none d-sm-inline">Aruga</h1>
+                    </a>
+                    <ul class="nav nav-pills flex-column flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-house me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white active">
+                                <i class="fa-solid fa-door-open me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Rooms</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white ">
+                                <i class="fa-solid fa-calendar me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Reservations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-users-between-lines me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Guest Accounts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-chart-line me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Occupancy Demand</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"> -->
+                            <i class="fa-solid fa-user me-2"></i> <!-- placeholder only  -->
+                            <strong class="d-none d-sm-inline mx-1">User</strong> <!-- username here -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow">
+                            <!-- 
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> 
+                            -->
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col  -->
+            <!-- main content  -->
+            <div class="col px-0 pb-5">
+                <!-- secondary navigation  -->
+                <!-- close this during coding  -->
+                <div class="container-fluid px-0">
+                    <nav class="navbar navbar-light bg-white shadow justify-content-between px-2 px-sm-5">
+              
+                      <!-- remove this div if there is no secondary navigation  -->
+                      <div>
+                        <a class="navbar-brand text-dark sn-active" href="#">
+                          Room
+                        </a>
+                        <a class="navbar-brand text-dark" href="#">
+                          Create Room
+                        </a>
+                      </div>
+              
+                      <!-- manager or receptionist  -->
+                      <a class="navbar-brand text-dark" href="#">
+                        <i class="fa-solid fa-user-tie me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Manager</span>
+                        <!--                    
+                        <i class="fa-solid fa-users me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Receptionist</span>
+                        -->
+                      </a>
+                    </nav>
+                </div>
+
+                <!-- start coding here  -->
+                <div class="container mt-5">
+                    <h2 class="display-6 fw-bold"> Edit Room 401</h2>
+                </div>
+
+                <div class="container">
+                    <!-- room details card  -->
+                    <div class="card mt-5">
+                        <div class="card-header fw-bold h5 ">
+                          Room Details
+                        </div>
+                        <div class="card-body">
+                            <!-- 
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold"></label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="">
+                                </div>
+                            </div> 
+                            -->
+                            <!-- Room Number  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Number</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="401">
+                                </div>
+                            </div> 
+                            <!-- Room Type -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Type</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="Deluxe">
+                                </div>
+                            </div> 
+                            <!-- room type  -->
+                            <div class="row">
+                                <label for="roomType" class="col-sm-2 col-form-label fw-bold">Room Type</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select">
+                                        <option value="standard">Standard</option>
+                                        <option value="deluxe">Deluxe</option>
+                                        <option value="suite">Suite</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <!-- Room Floor   -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Floor</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="4">
+                                </div>
+                            </div>   
+                             <!-- Room Capacity   -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Capacity</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="6">
+                                </div>
+                            </div>  
+                             <!-- Room Price   -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Price</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="" value="2500">
+                                </div>
+                            </div>                          
+                        </div>
+
+                        <div class="card-footer text-end">
+                        <!-- buttons  -->
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-secondary " type="button">Cancel</button>
+                                <button class="btn btn-primary ms-3" type="button">Submit</button>    
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72e773f6c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
