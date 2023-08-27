@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information | John Doe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
+    <link rel="stylesheet" href="../../assets/css/roomnav.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- col   -->
+            <!-- sidebar navigation  -->
+            <!-- close this during coding  -->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
+                <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
+                    <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
+                        <i class="fa-solid fa-hand-holding-heart display-6 me-sm-2"></i>
+                        <h1 class="display-4 d-none d-sm-inline">Aruga</h1>
+                    </a>
+                    <ul class="nav nav-pills flex-column flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-house me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-door-open me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Rooms</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-calendar me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Reservations</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white active">
+                                <i class="fa-solid fa-users-between-lines me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Guest Accounts</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle text-white">
+                                <i class="fa-solid fa-chart-line me-sm-2"></i>
+                                <span class="ms-1 d-none d-sm-inline">Occupancy Demand</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"> -->
+                            <i class="fa-solid fa-user me-2"></i> <!-- placeholder only  -->
+                            <strong class="d-none d-sm-inline mx-1">User</strong> <!-- username here -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow">
+                            <!-- 
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> 
+                            -->
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- col  -->
+            <!-- main content  -->
+            <div class="col px-0">
+                <!-- secondary navigation  -->
+                <!-- close this during coding  -->
+                <div class="container-fluid px-0">
+                    <nav class="navbar navbar-light bg-white shadow justify-content-between px-2 px-sm-5">
+              
+                      <!-- remove this div if there is no secondary navigation  -->
+                      <div>
+                        <a class="navbar-brand text-dark sn-active" href="#">
+                            Guest Accounts
+                        </a>
+                        <a class="navbar-brand text-dark" href="#">
+                            Register Guest Account
+                        </a>
+                      </div>
+              
+                      <!-- manager or receptionist  -->
+                      <a class="navbar-brand text-dark" href="#">
+                        <i class="fa-solid fa-user-tie me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Manager</span>
+                        <!--                    
+                        <i class="fa-solid fa-users me-sm-2"></i>
+                        <span class="ms-1 d-none d-sm-inline">Receptionist</span>
+                        -->
+                      </a>
+                    </nav>
+                </div>
+
+                <!-- start coding here  -->
+                <div class="container mt-5 d-flex align-items-center">
+                    <img src="https://github.com/mdo.png" alt="hugenerd" width="80" height="80" class="rounded-circle">
+                    <strong class="ms-4 display-6 fw-bold">John Doe</strong> <!-- username here -->
+                </div>
+
+                <!-- guest account navigation  -->
+                <div class="container mt-3">
+                    <div class="d-flex justify-content-between align-items-stretch pt-2 text-white">
+                        <ul class="nav nav-pills justify-content-between flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch " id="menu">
+                            <!-- account information  -->
+                            <li class="nav-item line">
+                                <a href="#" class="nav-link align-middle nav_text room_active">
+                                    <i class="fa-solid fa-circle-info me-sm-1 ms-2"></i>                                    
+                                    <span>Account Information</span>                        
+                                </a>
+                            </li>
+                            <!-- folio  -->
+                            <li class="nav-item line">
+                                <a href="#" class="nav-link align-middle nav_text">
+                                    <i class="fa-solid fa-file-invoice me-sm-1 ms-2"></i>
+                                    <span>Folio</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <!-- guest details card  -->
+                    <div class="card mt-5">
+                        <div class="card-header fw-bold h5">
+                          Guest Details
+                        </div>
+                        <div class="card-body">
+                            <!-- 
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold"></label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="">
+                                </div>
+                            </div> 
+                            -->
+                            <!-- full name  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Full Name</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="John Doe">
+                                </div>
+                            </div> 
+                            <!-- home address  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Home Address</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="123 Main Street Citytown, ST 12345 United States">
+                                </div>
+                            </div> 
+                            <!-- email address  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Email Address</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="johndoe@gmail.com">
+                                </div>
+                            </div> 
+                            <!-- contact number  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Contact Number</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="(555) 123-4567">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- guest stay details card  -->
+                    <div class="card mt-5">
+                        <div class="card-header fw-bold h5">
+                            Guest Stay Details
+                        </div>
+                        <div class="card-body">
+                            <!-- 
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold"></label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="">
+                                </div>
+                            </div> 
+                            -->
+                            <!-- check in date  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Check-In Date</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="2023/08/02">
+                                </div>
+                            </div> 
+                            <!-- check out date  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Check-Out Date</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="2023/08/04">
+                                </div>
+                            </div> 
+                             <!-- number of days  -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Number of Days</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="2">
+                                </div>
+                            </div> 
+                            <!-- number of adults  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Number of Adults </label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="2">
+                                </div>
+                            </div> 
+                            <!-- number of children  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Number of Children </label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="3">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- room selection card  -->
+                    <div class="card mt-5">
+                        <div class="card-header fw-bold h5">
+                            Room Selection
+                        </div>
+                        <div class="card-body">
+                            <!-- 
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold"></label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="">
+                                </div>
+                            </div> 
+                            -->
+                            <!-- room type  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Type</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="Deluxe">
+                                </div>
+                            </div>
+                             <!-- room number  -->
+                             <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Room Number</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="401">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- payment and balance card  -->
+                    <div class="card mt-5">
+                        <div class="card-header fw-bold h5">
+                            Payment and Balance
+                        </div>
+                        <div class="card-body">
+                            <!-- 
+                            <div class="mb-3 row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold"></label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="">
+                                </div>
+                            </div> 
+                            -->
+                            <!-- mode of payment  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Mode of Payment</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="Credit Card">
+                                </div>
+                            </div> 
+                            <!-- starting balance  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Starting Balance</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="3000">
+                                </div>
+                            </div> 
+                            <!-- paid  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Paid</label>
+                                <div class="col-sm-10">
+                                  <input type="text" readonly class="form-control-plaintext" id="" value="Downpayment">
+                                </div>
+                            </div> 
+                            <!-- balance  -->
+                            <div class="row">
+                                <label for="" class="col-sm-2 col-form-label fw-bold">Balance</label>
+                                <div class="col-sm-10">
+                                    <input type="text" readonly class="form-control-plaintext" id="" value="2100">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- buttons  -->
+                    <div class="d-grid gap-2 mt-5">
+                        <a href="#" class="btn btn-primary" type="button">Edit</a>
+                        <a href="#" class="btn btn-danger" type="button">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/72e773f6c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
