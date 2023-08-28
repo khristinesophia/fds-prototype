@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add a Promo or Deal | Manager</title>
+    <title>Promo and Deal | Summer Getaway Special</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/sidenav/sidenav.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -17,8 +16,7 @@
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 bg-primary">
                 <div class="d-flex flex-column align-items-stretch px-2 pt-2 text-white min-vh-100">
                     <a href="#" class="d-flex justify-content-center align-items-center text-white text-decoration-none pb-2 mb-md-0">
-                        <i class="fa-solid fa-hand-holding-heart display-6 me-sm-2"></i>
-                        <h1 class="display-4 d-none d-sm-inline">Aruga</h1>
+                        <img src="../../assets/imgs/logo-white.png" alt="" width="70" height="70">
                     </a>
                     <ul class="nav nav-pills flex-column flex-shrink-0 mb-sm-auto mb-0 align-items-center align-items-sm-stretch" id="menu">
                         <li class="nav-item">
@@ -91,9 +89,12 @@
                       <!-- remove this div if there is no secondary navigation  -->
                       <div>
                         <a class="navbar-brand text-dark" href="#">
-                          Promos and Deals
+                            <img src="../../assets/imgs/logo-blue.png" alt="" height="60">
                         </a>
                         <a class="navbar-brand text-dark sn-active" href="#">
+                          Promos and Deals
+                        </a>
+                        <a class="navbar-brand text-dark" href="#">
                           Add a Promo or Deal
                         </a>
                       </div>
@@ -112,63 +113,25 @@
 
                 <!-- start coding here  -->
                 <div class="container mt-5">
-                    <h2 class="display-6 fw-bold">Add a Promo or Deal</h2>                
-                </div>
-
-                <section class="mt-4">
-                    <div class="container">
-                        <form class="card">
-                        <div class="card-header text-dark">
-                            <nav class="nav nav-pills nav-fill">
-                            <a class="nav-link tab-pills" href="#">Promo and Deal Detail</a>
-                            <a class="nav-link tab-pills" href="#">Finish</a>
-                            </nav>
-                        </div>
-    
+                    <div class="card mb-3">
+                        <img src="../../assets/imgs/promo1-image.jpg" class="card-img-top img-cover" alt="..." height="250">
                         <div class="card-body">
-                            <!-- Room Details tab -->
-                            <div class="tab d-none">
-                                <!-- promo code  -->
-                                <div class="mb-3">
-                                    <label for="promocode" class="form-label fw-bold">Promo Code</label>
-                                    <input type="text" class="form-control" name="promocode" id="promocode" placeholder="Enter the promo code">
-                                </div>
-                                <!-- promo title  -->
-                                <div class="mb-3">
-                                    <label for="promotitle" class="form-label fw-bold">Promo Title</label>
-                                    <input type="text" class="form-control" name="promotitle" id="promotitle" placeholder="Enter the promo title">
-                                </div>
-                                <!-- description  -->
-                                <div class="mb-3">
-                                    <label for="description" class="form-label fw-bold">Description</label>
-                                    <input type="text" class="form-control" name="description" id="description" placeholder="Enter the promo description">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="poster" class="form-label fw-bold">Poster</label>
-                                    <input class="form-control" type="file" id="poster">
-                                </div>
-                            </div>
-                    
-                            <!-- Finish tab  -->
-                            <div class="tab d-none">
-                            <p>All Set! Please submit to continue. Thank you</p>
-                            </div>
+                            <h5 class="card-title fw-bold">Summer Getaway Special</h5>
+                            <p class="card-text">Escape to our luxurious hotel this summer and enjoy 20% off your stay! Immerse yourself in comfort, relax by the pool, and indulge in our exquisite dining options. Use promo code SummerGetaway20 to unlock this fantastic deal.</p>
+                            <a href="#" class="btn btn-secondary">SummerGetaway20</a>
                         </div>
                         <div class="card-footer text-end">
-                            <div class="d-flex">
-                            <button type="button" id="back_button" class="btn btn-link" onclick="back()">Back</button>
-                            <button type="button" id="next_button" class="btn btn-primary ms-auto" onclick="next()">Next</button>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary ms-3">Edit</button>
+                                <button class="btn btn-danger ms-3">Delete</button>
                             </div>
                         </div>
-                        </form>
-                    </div>
-                </section>
+                      </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/72e773f6c0.js" crossorigin="anonymous"></script>
-    <script src="../../assets/js/multistepform.js"></script>
 </body>
 </html>
