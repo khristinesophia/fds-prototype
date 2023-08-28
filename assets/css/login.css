@@ -21,3 +21,8 @@
 body{
    background-color: #458af3;
 }
+.receptionist-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
